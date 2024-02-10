@@ -1,16 +1,27 @@
-# This is a sample Python script.
+# coding=utf-8
+"""
+docstring
+"""
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+8 to toggle the breakpoint.
+from split_int_num import split_int_num
 
 
-# Press the green button in the gutter to run the script.
+def switch_camel_snake(input_name: str) -> str:
+    """
+    задание 2.
+    Implement a function that replaces, takes a string of text and changes Snake_Case to CamelCase and vice versa.
+    Examples:
+    my_first_func -> MyFirstFunc,
+    AnotherFunction -> another_function
+
+    :param input_name: accepts the name in snake_case or CamelCase. If the line is not in one style or another,
+    throws an "InputValueError" exception
+    :return: Returns the name translated into CamelCase or snake_case respectively
+    """
+    pass
+
+
 if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+    print(split_int_num(1234441))
+    print(split_int_num(645748611))
+    print(split_int_num(0))
