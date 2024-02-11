@@ -16,7 +16,7 @@ def switch_camel_snake(input_name: str) -> str:
     throws an "InputValueError" exception
     :return: Returns the name translated into CamelCase or snake_case respectively
     """
-    snake_case_pattern = r'^[a-z0-9]+[_[a-z0-9]+]*$'
+    snake_case_pattern = r'^[a-z0-9]+(_[a-z0-9]+)*$'
     camel_case_pattern = r'^([A-Z]{1}[a-z0-9]*)+$'
 
     if re.match(snake_case_pattern, input_name):

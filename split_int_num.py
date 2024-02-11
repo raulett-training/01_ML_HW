@@ -10,4 +10,4 @@ def split_int_num(num: int) -> str:
 
     :param num: Входные данные. Целое число
     """
-    return f"{num: ,}".replace(',', ' ')
+    return f"{num:,}".replace(',', ' ')
