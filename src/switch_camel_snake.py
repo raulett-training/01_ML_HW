@@ -1,7 +1,7 @@
 # coding=utf-8
 import re
 
-from InputValueError import InputValueError
+from src.InputValueError import InputValueError
 
 
 def switch_camel_snake(input_name: str) -> str:
